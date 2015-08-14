@@ -169,4 +169,5 @@ include_directories(
 # catkin_add_nosetests(test)
 
 add_executable(convert_pcl_server src/convert_pcl_node.cpp)
+add_dependencies(convert_pcl_server convert_pcl_generate_messages_cpp)
 target_link_libraries(convert_pcl_server ${catkin_LIBRARIES})
